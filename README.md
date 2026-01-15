@@ -64,95 +64,623 @@ code {
 
 <!-- ===== PROGRAM 1 ===== -->
 <div class="program">
-    <div class="program-title">Program 1: Hello World</div>
+    <div class="program-title">1:2</div>
     <button class="copy-btn" onclick="copyCode('code1', this)">Copy</button>
     <pre><code id="code1">
-// Add your program code here
-printf("Hello World");
+N10 G90 G21
+N20 T101 M03 S1000 F100
+N30 G00 X0 Y0
+N40 G00 X20 Y20 
+N45 G00 X20 Y20 Z-5
+N60 G01 X40 Y20
+N70 G02 X60 Y20 R10
+N90 G01 X80 Y20
+N100 G01 X80 Y40
+N110 G02 X80 Y60 R10
+N120 G01 X80 Y80
+N130 G03 X20 Y20 R60
+N140 G00 X20 Y20 Z5
+N150 G00 X150 Y150 Z5 M05 M06
+N160 T202 M03 S1000 F100
+N170 G00 X0 Y0 Z5
+N180 G00 X20 Y80
+N190 G01 Z-10
+N195 G00 Z5
+N200 G00 X20 Y20 Z5
+N210 G00 X150 Y150 Z5 M05 M06 M30);
     </code></pre>
 </div>
 
 <!-- ===== PROGRAM 2 ===== -->
 <div class="program">
-    <div class="program-title">Program 2: Addition</div>
+    <div class="program-title">11:1</div>
     <button class="copy-btn" onclick="copyCode('code2', this)">Copy</button>
     <pre><code id="code2">
-// Add your program code here
-int a = 5, b = 10;
-printf("%d", a + b);
+N10 G21
+N20 T0100 M03 S1000 F500
+N40 G71 U2 R2
+N50 G71 P060 Q0130 U0 W0
+N60 G00 X20 Z0
+N70 G01 X20 Z-15
+N72 G01 X26 Z-15
+N73 G01 X26 Z-30
+N75 G01 X26 Z-37
+N80 G03 X32 Z-40 R3
+N90 G01 X32 Z-45
+N100 G02 X42 Z-50 R5
+N110 G01 X42 Z-60
+N120 G01 X50 Z-65
+N130 G01 X50 Z-75
+N140 G00 X100 Z100 M05 M06
+N150 T0201 M03 S1000 F500
+N160 G00 X0 Z0
+N170 G01 X0 Z-40
+N180 G00 X0 Z0 M05 M06
+N190 T0301 M03 S1000 F500
+N200 G00 X0 Z0
+N210 G90 X10 Z-20
+N220 X12
+N230 X14
+N240 X16
+N250 G00 X0 Z0 M05 M06
+N260 T0401 M03 S1000 F500
+N265 G00 X24 Z0
+N270 X24 Z-15
+N280 G76 P014560 Q1000 R0
+N290 G76 X20.934 Z-35 P1533 Q2000 F2.5
+N300 G00 X100 Z100 M30
     </code></pre>
 </div>
 
 <!-- ===== PROGRAMS 3 to 19 ===== -->
 <!-- Just change program name and code -->
 
-<div class="program"><div class="program-title">Program 3</div>
+<div class="program"><div class="program-title">11:2</div>
 <button class="copy-btn" onclick="copyCode('code3', this)">Copy</button>
-<pre><code id="code3">// Your code here</code></pre></div>
+<pre><code id="code3">
+N10 G90 G21
+N20 T101 M03 S1000 F100
+N30 G00 X0 Y0 Z5
+N40 G00 X20 Y20
+N45 G01 Z-10
+N50 G01 X40 Y20
+N60 G02 X60 Y20 R10
+N70 G01 X80 Y20
+N80 G01 X80 Y40
+N90 G02 X80 Y60 R10
+N100 G01 X80 Y80
+N110 G03 X20 Y20 R60
+N120 G00 Z5
+N130 G00 X150 Y150 Z50 M05 M06
+N140 T102 M03 S1000 F100
+N150 G00 X0 Y0
+N160 G00 X20 Y80
+N170 G01 Z-10
+N180 G00 Z5
+N190 G00 X150 Y150 Z50 M30
+</code></pre></div>
 
-<div class="program"><div class="program-title">Program 4</div>
+<div class="program"><div class="program-title">2:1</div>
 <button class="copy-btn" onclick="copyCode('code4', this)">Copy</button>
-<pre><code id="code4">// Your code here</code></pre></div>
+<pre><code id="code4">
 
-<div class="program"><div class="program-title">Program 5</div>
+N10 G21
+N20 T0101 M03 S1000 F500
+N25 G00 X0 Z0
+N29 G00 X80 Z0
+N30 G71 U1 R1
+N40 G71 P050 Q0140 U0 W0
+N50 G00 X20 Z0
+N60 G01 X20 Z-20
+N65 G01 X24 Z-20
+N70 G01 X24 Z-35
+N75 G01 X26 Z-35
+N80 G01 X26 Z-42
+N90 G03 X32 Z-45 R3
+N100 G01 X32 Z-50
+N110 G02 X42 Z-55 R5
+N120 G01 X42 Z-65
+N130 G01 X50 Z-70
+N140 G01 X50 Z-80
+N150 G00 X100 Z100 M05 M06
+N160 T0201 S1000 M03 F500
+N170 G00 X0 Z0
+N180 G01 X0 Z-35
+N190 G00 X0 Z0
+N200 G00 X100 Z100 M05 M06
+N210 T0301 M03 S1000 F500
+N215 G00 X10 Z0
+N220 G90 X9 Z-20
+N230 X12
+N240 X16
+N245 G00 X0 Z0
+N250 G00 X100 Z100 M05 M06
+N260 T0401 M03 S1000 F500
+N270 G00 X0 Z0
+N280 G00 X24 Z-20
+N290 G76 P014560 Q1000 R0
+N300 G76 X22.159 Z-35 P920.1 Q1000 F1.5
+N310 G00 X24 Z0
+N320 G00 X100 Z100 M30
+</code></pre></div>
+
+<div class="program"><div class="program-title">2:2</div>
 <button class="copy-btn" onclick="copyCode('code5', this)">Copy</button>
-<pre><code id="code5">// Your code here</code></pre></div>
+<pre><code id="code5">
+N10 G90 G21
+N20 T101 S1000 F500 M03
+N30 G00 X0 Y0 Z0
+N35 G00 X20 Y16
+N36 G01 X20 Y16 Z-15
+N39 G01 X26 Y10 R6 Z-15
+N40 G01 X60 Y10 Z-15
+N50 G01 X80 Y30
+N60 G01 X80 Y80
+N70 G03 X70 Y90 R10
+N80 G01 X40 Y90
+N90 G01 X20 Y70
+N100 G01 X20 Y50
+N110 G02 X20 Y40 R5
+N120 G01 X20 Y16
+N130 G00 X20 Y16 Z5
+N140 G00 M30 X100 Y100 Z50 M30
+</code></pre></div>
 
-<div class="program"><div class="program-title">Program 6</div>
+<div class="program"><div class="program-title">19</div>
 <button class="copy-btn" onclick="copyCode('code6', this)">Copy</button>
-<pre><code id="code6">// Your code here</code></pre></div>
+<pre><code id="code6"> 
+N10 G21
+N20 T0101 M03 S1000 F100
+N30 G00 X55 Z0
+N40 G71 U1 R1
+N50 G71 P070 Q0200 U0200 R0 W0 F100
+N60 G00 X0 Z0
+N70 G01 X25 Z0
+N80 G01 X25 Z-20
+N90 G02 X30 Z-25 R5
+N100 G01 X30 Z-35
+N110 G03 X35 Z-40 R5
+N120 G01 X35 Z-45
+N130 G01 X40 Z-60
+N140 G01 X45 Z-70
+N150 G01 X55 Z-75
+N160 G01 X55 Z-85
+N170 T0200 M03 S1000 F100
+N180 G01 X40 Z-60
+N190 G74 P014560 Q1000
+N200 G74 X39.34 Z-60 P0.326 Q2000 F2
+N210 T0300 M03 S1000 F100
+N220 G01 X15 Z-10
+N230 G03 X15 Z-15 R5
+N240 G01 Z-25
+N250 G01 X10 Z-30
+N255 G01 X5 Z-40
+N260 G00 X100 Z50 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 7</div>
+<div class="program"><div class="program-title">9:2</div>
 <button class="copy-btn" onclick="copyCode('code7', this)">Copy</button>
-<pre><code id="code7">// Your code here</code></pre></div>
+<pre><code id="code7">
+N10 G90 G21
+N20 T101 M03 S1000 F100
+N30 G00 X0 Y0 Z5
+N40 G00 X150 Y150
+N50 M98 P0022000
+N60 G00 X210 Y150
+N70 M98 P0032000
+N80 G00 X210 Y210
+N90 M98 P0042000
+N100 G00 X150 Y210
+N110 M98 P0052000
+N120 G00 X100 Y100 Z50
+M30
+O2000
+G91
+G01 Z-15
+G01 X40 Y0
+G01 X0 Y40
+G01 X-40 Y0
+G01 X0 Y-40
+G00 Z15
+G90
+M99</code></pre></div>
 
-<div class="program"><div class="program-title">Program 8</div>
+<div class="program"><div class="program-title">9:1</div>
 <button class="copy-btn" onclick="copyCode('code8', this)">Copy</button>
-<pre><code id="code8">// Your code here</code></pre></div>
+<pre><code id="code8">
+N10 G21
+N20 T0100 M03 S1000 F500
+N40 G71 U2 R2
+N50 G71 P060 Q0130 U0 W0
+N60 G00 X20 Z0
+N70 G01 X20 Z-15
+N72 G01 X26 Z-15
+N73 G01 X26 Z-30
+N75 G01 X26 Z-37
+N80 G03 X32 Z-40 R3
+N90 G01 X32 Z-45
+N100 G02 X42 Z-50 R5
+N110 G01 X42 Z-60
+N120 G01 X50 Z-65
+N130 G01 X50 Z-75
+N140 G00 X100 Z100 M05 M06
+N150 T0201 M03 S1000 F500
+N160 G00 X0 Z0
+N170 G01 X0 Z-40
+N180 G00 X0 Z0 M05 M06
+N190 T0301 M03 S1000 F500
+N200 G00 X0 Z0
+N210 G90 X10 Z-20
+N220 X12
+N230 X14
+N240 X16
+N250 G00 X0 Z0 M05 M06
+N260 T0401 M03 S1000 F500
+N265 G00 X24 Z0
+N270 X24 Z-15
+N280 G76 P014560 Q1000 R0
+N290 G76 X20.934 Z-35 P1533 Q2000 F2.5
+N300 G00 X100 Z100 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 9</div>
+<div class="program"><div class="program-title">5:1</div>
 <button class="copy-btn" onclick="copyCode('code9', this)">Copy</button>
-<pre><code id="code9">// Your code here</code></pre></div>
+<pre><code id="code9">
 
-<div class="program"><div class="program-title">Program 10</div>
+N10 G21 
+N20 T0101 M03 S1000 F500
+N30 G71 U2 R2
+N40 G71 P050 Q0160 U0 W0 F100
+N50 G00 X20 Z0
+N60 G01 X20 Z-20
+N70 G01 X24 Z-20
+N80 G01 X24 Z-35
+N90 G01 X26 Z-35
+N100 G01 X26 Z-42
+N110 G03 X32 Z-45 R3
+N120 G01 X32 Z-50
+N130 G02 X42 Z-55 R5
+N140 G01 X42 Z-65
+N150 G01 X50 Z-70
+N160 G01 X50 Z-80
+N170 G00 X200 Z150 M05 M06
+N180 T0201 M03 S1000 F500
+N190 G00 X0 Z0 
+N200 G01 X0 Z-30
+N210 G00 X0 Z0 
+N220 G00 X200 Z150 M05 M06
+N230 T0301 M03 S1000 F500  
+N235 G71 U3 R3
+N240 G71 P0250 Q0266 U0 W0 F1000
+N250 G00 X10 Z0
+N260 G01 X10 Z-20 
+N265 G01 X16 Z-20
+N266 G01 X16 Z0
+N270 G00 X200 Z150 M05 M06
+N280 T0401 M03 S1000 F500
+N285 G00 X24 Z-20
+N290 G76 P014560 Q1000 R0
+N300 G76 X20.934 Z-35 P1533 Q2000 F2.5
+N310 G00 X200 Z150 M30</code></pre></div>
+
+<div class="program"><div class="program-title">5:2</div>
 <button class="copy-btn" onclick="copyCode('code10', this)">Copy</button>
-<pre><code id="code10">// Your code here</code></pre></div>
+<pre><code id="code10">
+N10 G90 G21
+N20 T101 M03 S1000 F500
+N30  G00 X0 Y0 Z5
+N40 G00 X20 Y15 
+N50 G01 Z-15
+N60 G00 Z5
+N70 G00 X100 Y100 Z50 M05 M06
+N80 T102 M03 S1000 F500 
+N90 G00 X0 Y0 Z5
+N100 G00 X65 Y16
+N110 G01 Z-15
+N120 G02 X45 Y15 R10
+N130 G02 X45 Y35 R10
+N140 G02 X65 Y35 R10
+N150 G02 X65 Y15 R10
+N160 G00 Z5
+N170 G00 X20 Y40
+N180 G01 Z-15
+N190 G01 X12.93 Y47.07 
+N200 G01 X12.93 Y57.07
+N210 G01 X20 Y64.14
+N220 G01 X30 Y64.14
+N230 G01 X37.07 Y57.07
+N240 G01 X37.07 Y47.07
+N250 G01 X30 Y40
+N260 G01 X20 Y40 
+N270 G00 Z5
+N280 G00 X100 Y100 Z50 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 11</div>
+<div class="program"><div class="program-title">16:1</div>
 <button class="copy-btn" onclick="copyCode('code11', this)">Copy</button>
-<pre><code id="code11">// Your code here</code></pre></div>
+<pre><code id="code11">16:1
+N10 G21
+N20 T0101 M03 S1000 F500
+N30 G00 X0 Z0
+N40 G00 X15 Z0
+N50 G71 U2 R2
+N60 G71 P070 Q0165 U0 W0 F1000
+N70 G01 X15 Z0
+N80 G01 X15 Z-10
+N90 G01 X20 Z-15
+N100 G01 X20 Z-32
+N110 G03 X30 Z-42 R10
+N120 G01 X30 Z-47
+N130 G01 X40 Z-51
+N140 G01 X40 Z-66
+N150 G01 X50 Z-66
+N160 G01 X50 Z-81
+N165 G00 X50 Z0
+N170 G00 X100 Z100 M05 M06
+N180 T0200 M03 S1000 F500
+N190 G00 X0 Z0
+N200 G01 X0 Z-24
+N210 G00 X0 Z0
+N220 G00 X100 Z100 M05 M06
+N230 T0300 M03 S100 F500
+N240 G00 X0 Z0
+N250 G00 X0 Z-14
+N260 G71 U2 R2
+N270 G71 P0275 Q0305 U0 W0
+N275 G00 X0 Z-14
+N280 G01 X6 Z-14
+N290 G02 X8 Z-12 R2
+N300 G01 X8 Z0
+N305 G00 X0 Z0
+N310 G00 X100 Z100 M05 M06</code></pre></div>
 
-<div class="program"><div class="program-title">Program 12</div>
+<div class="program"><div class="program-title">16:2</div>
 <button class="copy-btn" onclick="copyCode('code12', this)">Copy</button>
-<pre><code id="code12">// Your code here</code></pre></div>
+<pre><code id="code12">
+N10 G90 G21
+N20 T101 M03 S1000 F500
+N30 G00 X0 Y0 Z5
+N40 G00 X30 Y50
+N50 G01 Z-5
+N60 G01 X50 Y50
+N70 G01 X56.18 Y69.021
+N80 G01 X40 Y88.042
+N90 G01 X23.18 Y69.021
+N100 G01 X30 Y50
+N110 G00 Z5
+N120 G00 X200 Y200 Z50 M05 M06
+N130 T102 M03 S1000 F500
+N140 G00 X0 Y0 Z5
+N150 G98 G81 X20 Y30
+N160 X130 Y30
+N170 X130 Y70
+N180 G00 X200 Y200 Z50 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 13</div>
+<div class="program"><div class="program-title">4:1</div>
 <button class="copy-btn" onclick="copyCode('code13', this)">Copy</button>
-<pre><code id="code13">// Your code here</code></pre></div>
+<pre><code id="code13">
+N10 G21 
+N20 G00 X70 Z0
+N30 T0101 M03 S1000 F500
+N40 G71 U1 R1
+N50 G71 P060 Q0150 U0 W0
+N60 G00 X20 Z0
+N70 G01 X20 Z-15
+N80 X24 Z-15
+N90 X24 Z-30
+N100 G03 X32 Z-34 R4
+N110 G01 X32 Z-40
+N120 G01 X40 Z-45
+N130 X40 Z-50
+N140 G03 X50 Z-55 R5
+N150 G01 X50 Z-70 
+N160 G00 X90 Z0 M30 M05 M06
+N170 T0201 M03 S1000 F500
+N180 G00 X0 Z0
+N190 G01 Z-40
+N200 G00 X0 Z0 M05 M06
+N210 T0301 M03 S1000 F500
+N220 G00 X0 Z0 
+N230 G71 U1 R1
+N240 G71 P0250 Q0270 U0 W0
+N250 G00 X8 Z-20
+N260 X12 Z-20
+N270 X12 Z0
+N280 G00 X0 Z0 M30 
+N290 T0401 M03 S1000 F500 
+N300 G00 X0 Z0
+N310 G00 X24 Z0
+N320 G00 X24 Z-15
+N330 G76 P014560 Q1000 R0
+N340 G76 X21.546 Z-30 P122686 Q2000 F1.5
+N350 G00 X500 Z250 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 14</div>
+<div class="program"><div class="program-title">4:2</div>
 <button class="copy-btn" onclick="copyCode('code14', this)">Copy</button>
-<pre><code id="code14">// Your code here</code></pre></div>
+<pre><code id="code14">
+N10 G90 G21
+N20 T0101 M03 S1000 F500
+N30 G00 X0 Y0 Z5
+N40 G01 X50 Y15
+N50 G01 Z-10
+N60 G01 X55 Y15
+N70 G03 X60 Y15 R5
+N80 G01 X65 Y15
+N90 G01 X65 Y25
+N100 G01 X60 Y25
+N110 G03 X55 Y25 R5
+N120 G01 X50 Y25
+N130 G01 X50 Y15
+N140 G00 Z5 M05 M06
+N150 T0102 M03 S1000 F500
+N160 G00 X40 Y55
+N170 G01 Z-10
+N180 G00 Z5 M05 M06
+N190 T0103 M03 S1000 F500
+N200 G00 X10 Y30
+N210 G01  Z-10
+N220 X24.26 Y25.38
+N230 X28.88 Y37.5
+N240 X24.26 Y 49.62
+N250 X10 Y45
+N260 X10 Y30
+N270 G00 Z5 
+N280 X100 Y100 Z50 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 15</div>
+<div class="program"><div class="program-title">13:2-17:2</div>
 <button class="copy-btn" onclick="copyCode('code15', this)">Copy</button>
-<pre><code id="code15">// Your code here</code></pre></div>
+<pre><code id="code15">
 
-<div class="program"><div class="program-title">Program 16</div>
+N10 G90
+N20 T101 M03 S1000 F100
+N30 G00 X0 Y0 Z5
+N40 M98 P0012000
+N50 M70
+N60 M98 P0022000
+N70 M80
+N80 M71
+N90 M98 P0032000
+N100 M81
+N110 M70
+N120 M71
+N130 M98 P0042000
+N140 M80
+M150 M81
+N160 G00 X100 Y100 Z50
+O 2000
+G00 X15 Y10
+G01 Z-5
+G01 X40 Y10
+G01 X47.72 Y33.77
+G01 X27.5 Y57.5
+G01 X7.28 Y33.77
+G01 X15 Y10
+G00 Z5
+M99</code></pre></div>
+
+<div class="program"><div class="program-title">7:2</div>
 <button class="copy-btn" onclick="copyCode('code16', this)">Copy</button>
-<pre><code id="code16">// Your code here</code></pre></div>
+<pre><code id="code16">
+N10 G90 G21
+N20 T101 M03 S1000 F500
+N30 G00 X0 Y0 Z5
+N40 G00 X20 Y20
+N50 G01 Z-10
+N60 G01 X40 Y20
+N70 G01 X50 Y37.32
+N80 G01 X40 Y54.64
+N90 G01 X20 Y54.64
+N100 G01 X10 Y37.32
+N110 G01 X20 Y20
+N120 G00 Z5
+N130 G00 X0 Y0 Z100
+N140 G00 X60 Y10
+N150 G01 Z-10
+N160 G01 X70 Y10
+N170 G01 X70 Y15
+N180 G03 X70 Y25
+N190 G01 X70 Y30
+N200 G01 X60 Y30
+N210 G01 X60 Y25
+N220 G03 X60 Y15
+N230 G01 X60 Y10
+N240 G00 Z5
+N250 G00 X100 Y100 Z50 M05 M06
+N260 T201 M03 S1000 F500
+N270 G00 X0 Y0 Z5
+N280 G00 X60 Y54.64
+N290 G01 Z-10
+N300 G00 Z5
+N310 G00 X100 Y100 Z50 M30</code></pre></div>
 
-<div class="program"><div class="program-title">Program 17</div>
+<div class="program"><div class="program-title">7:1</div>
 <button class="copy-btn" onclick="copyCode('code17', this)">Copy</button>
-<pre><code id="code17">// Your code here</code></pre></div>
+<pre><code id="code17">
 
-<div class="program"><div class="program-title">Program 18</div>
+N10 G21
+N20 T0101 M03 S1000 F500
+N30 G00 X0 Z0
+N40 G00 X50 Z0
+N50 G71 U2 R2
+N60 G71 P070 Q0160 U0 W0
+N70 G01 X20 Z0
+N80 G01 X20 Z-15
+N90 G01 X24 Z-15
+N100 G01 X24 Z-37
+N110 G03 X32 Z-40 R3
+N120 G01 X32 Z-45
+N130 G02 X42 Z-50 R5
+N140 G01 X42 Z-60
+N150 G01 X50 Z-65
+N160 G01 X50 Z-75
+N170 G00 X100 Z100 M05 M06
+N180 T0210 M03 S1000 F500
+N190 G00 X0 Z0
+N200 G01 X0 Z-35
+N210 G00 X0 Z0
+N225 G00 X100 Z100 M05 M06
+N230 T0301 M03 S1000 F500
+N240 G00 X0 Z0
+N250 G00 X10 Z0
+N260 G90 X9 Z-20
+N270 X12
+N280 X15
+N290 X16
+N300 G00 X0 Z0
+N310 G00 X100 Z100 M05 M06
+N320 T0401 M03 S1000 F500
+N330 G00 X0 Z0
+N340 G00 X24 Z-15
+N350 G76 P014560 Q100 R0
+N360 G76 X20.9 Z-30 P1533 Q100 F2.5
+N370 G00 X24 Z0
+N380 G00 X100 Z100 M30</code></pre></div>
+
+<div class="program"><div class="program-title">12:2</div>
 <button class="copy-btn" onclick="copyCode('code18', this)">Copy</button>
-<pre><code id="code18">// Your code here</code></pre></div>
+<pre><code id="code18">
 
-<div class="program"><div class="program-title">Program 19</div>
+N10 G90 G21
+N20 T101 M03 S100 F100
+N30 G00 X0 Y0 Z5
+N40 G00 X26.18 Y50
+N50 G0 1Z-5
+N60 G01 X20 Y69.02
+N70 G01 X36.18 8Y88.04
+N80 G01 X52.36 Y69.02
+N90 G01 X46.18 Y50
+N100 G01 Z5
+N110 G00 X100 Y100 Z100 M05 M06
+N120 T102 M03 S100 F100
+N130 G00 X0 Y0 Z5
+N140 G00 X20 Y30 Z5
+N150 G01 X20 Y30 Z-5
+N160 G00 X20 Y30 Z5
+N170 G00 X80 Y30 Z5
+N180 G00 X80 Y30 Z5
+N190 G00 X80 Y30 Z5
+N200 G00 X80 Y70 Z5
+N210 G00 X80 Y70 Z-5
+N220 G00 X80 Y70 Z5 M30</code></pre></div>
+
+<div class="program"><div class="program-title">10:2</div>
 <button class="copy-btn" onclick="copyCode('code19', this)">Copy</button>
-<pre><code id="code19">// Your code here</code></pre></div>
+<pre><code id="code19">
+N10 G90 G21
+N20 T101 M30 S1000 F500
+N30 G00 X0 Y0 Z5
+N40 G01 X20 Y10
+N50 G01 X20 Y10 Z-15
+N50 G01 X60 Y10
+N60 G01 X80 Y30
+N70 G01 X80 Y80
+N80 G03 X80 Y90 R10
+N90 G01 X40 Y90
+N100 G01 X20 Y70
+N100 G01 X20 Y50
+N110 G02 X20 Y40 R5
+N120 G01 X20 Y40
+N130 G01 X20 Y16
+N130 G02 X26 Y10 R6
+N140 G00 X20 Y10 Z5
+N130 G00 X500 Y500 F500 M03</code></pre></div>
 
 <script>
 function copyCode(codeId, button) {
