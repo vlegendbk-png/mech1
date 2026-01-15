@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Program Copy Website</title>
-
+ <button class="copy-btn" onclick="copyCode('code1', this)">1:2</button>
+    <button class="copy-btn" onclick="copyCode('code2', this)">11:1</button>
+    <button class="copy-btn" onclick="copyCode('code3', this)">11:2</button>
+    <button class="copy-btn" onclick="copyCode('code4', this)">2:1</button>
+    <button class="copy-btn" onclick="copyCode('code5', this)">2:2</button>
+    <button class="copy-btn" onclick="copyCode('code6', this)">19</button>
+    <button class="copy-btn" onclick="copyCode('code7', this)">9:2</button>
+    <button class="copy-btn" onclick="copyCode('code8', this)">9:1</button>
+    <button class="copy-btn" onclick="copyCode('code9', this)">5:1</button>
+    <button class="copy-btn" onclick="copyCode('code10', this)">5:2</button>
+    <button class="copy-btn" onclick="copyCode('code11', this)">16:1</button>
+    <button class="copy-btn" onclick="copyCode('code12', this)">16:2</button>
+    <button class="copy-btn" onclick="copyCode('code13', this)">4:1</button>
+    <button class="copy-btn" onclick="copyCode('code14', this)">4:2</button>
+    <button class="copy-btn" onclick="copyCode('code15', this)">13:2-17:2</button>
+    <button class="copy-btn" onclick="copyCode('code16', this)">7:2</button>
+    <button class="copy-btn" onclick="copyCode('code17', this)">7:1</button>
+    <button class="copy-btn" onclick="copyCode('code18', this)">12:2</button>
+    <button class="copy-btn" onclick="copyCode('code19', this)">10:2</button>
+    
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -60,7 +79,7 @@ code {
 
 <body>
 
-<h1>Programming Examples</h1>
+<h1></h1>
 
 <!-- ===== PROGRAM 1 ===== -->
 <div class="program">
