@@ -392,7 +392,7 @@ delay_ms(1);
 </div>
 <div class="program">
 <button onclick="copyCode(this)">Copy</button>
-<h3>14. Buzzer</h3>
+<h3>14.LED</h3>
 <pre>
 #include <lpc17xx.h>
 void delay_ms(unsigned int);
@@ -427,7 +427,6 @@ for(j=0;j<10000;j++);
 }
 
 </pre>
-</div>
 </div>
 
 <script>
