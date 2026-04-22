@@ -297,7 +297,6 @@ delay_ms(1);
 <div class="program">
 <button onclick="copyCode(this)">Copy</button>
 <h3>11. DAC Triangle Wave</h3>
-</div>
 <pre>
   #include <lpc17xx.h>
 void GPIOINIT(void);
@@ -318,6 +317,8 @@ LPC_DAC->DACR = j<<6;
 
 
 </pre>
+</div>
+
 
 
 <div class="program">
